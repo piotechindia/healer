@@ -14,6 +14,7 @@ export default function navBar() {
                 <li><Link href='/'>Overview</Link></li>
                 <li><Link href='/workout'>Workout</Link></li>
                 <li><Link href='/diet-plan'>Diet Plan</Link></li>
+                <hr />
                 <li><Link href='/goals'>Goals</Link></li>
                 <li><Link href='/progress'>Progress</Link></li>
             </ul>
@@ -21,6 +22,7 @@ export default function navBar() {
                 <li><Link href='/contact'>Contact Us</Link></li>
                 <li><Link href='/help'>Help</Link></li>
                 <li><Link href='/my-profile'>My Account</Link></li>
+                <hr />
                 <li><Link href='/logout'>Logout</Link></li>
             </ul>
         </nav>
