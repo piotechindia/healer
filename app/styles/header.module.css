@@ -1,0 +1,11 @@
+.header{
+    grid-area: header;
+    display: flex;justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    margin: 0;padding: 1rem;
+    position: sticky;
+    top: 0;
+    border-bottom: .1rem solid #ddd;
+}
+

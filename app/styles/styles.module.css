@@ -1,0 +1,28 @@
+.flex{
+    display: flex;
+}
+.main{
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: auto 1fr;
+    height: 100vh;
+    grid-template-areas: 
+    "sidebar header header header header"
+    "sidebar main main main main";
+}
+.pageContent{
+    grid-area: main;
+    height: 100%;
+    display: flex;justify-content: space-between;align-items: center;
+    flex-direction: column;
+    padding: 2rem 2rem 1rem 2rem;
+}
+
+.ul{
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+.ul:nth-child():visited{
+        color: currentColor;
+    }

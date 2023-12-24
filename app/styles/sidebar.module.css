@@ -1,0 +1,15 @@
+.sidebar{
+    grid-area: sidebar;
+    border-right: .1rem solid #ddd;
+    padding: 2rem;
+}
+
+.sidebar ul{
+    flex-direction: column;
+}
+
+.navbar{
+    display: flex;flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
