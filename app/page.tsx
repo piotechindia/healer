@@ -12,7 +12,7 @@ export default function Home() {
       <div className={styles.pageContent}>
         <p>Overview</p>
         <Footer/>
-        </div>
+      </div>
     </main>
   )
 }

@@ -8,6 +8,19 @@
     flex-direction: column;
 }
 
+.sidebar ul li{
+    display: flex;
+}
+
+
+
+.sidebar ul li:hover{
+    background-color: #F97316;
+    color: #FFF;
+    border-radius: 5px;
+    border: 5px #F97316 solid;
+}
+
 .navbar{
     display: flex;flex-direction: column;
     justify-content: space-between;
