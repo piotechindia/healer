@@ -1,19 +1,25 @@
 .flex{
     display: flex;
 }
+
 .main{
     display: grid;
     grid-template-rows: auto 1fr;
     grid-template-columns: auto 1fr;
     height: 100vh;
     grid-template-areas: 
-    "sidebar header header header header"
-    "sidebar main main main main";
+    "sidebar header header header"
+    "sidebar main main main"
+    "sidebar main main main"
+    "sidebar footer footer footer"
+    ;
 }
 .pageContent{
     grid-area: main;
     height: 100%;
-    display: flex;justify-content: space-between;align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     flex-direction: column;
     padding: 2rem 0 0 0 ;
 }
@@ -26,3 +32,19 @@
 .ul:nth-child():visited{
         color: currentColor;
     }
+
+
+ @media screen and (max-width: 480px){
+  .main {
+    grid-template-areas: 
+    "header"
+    "main"
+    "main"
+    "footer"
+    ;
+  }
+
+  .ul{
+    flex-direction: column;
+  }
+  }

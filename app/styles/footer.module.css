@@ -1,4 +1,5 @@
 .footer{
+    grid-area: header;
     border-top: .1rem solid #ddd;
     padding: 1rem;
     width: 100%;
