@@ -15,7 +15,7 @@ export default function Header() {
       <div style={{ display: 'flex', gap: '1rem' }}>
         <Image src='/notification.svg' alt='icon' width={35} height={35}></Image>
         <Image src='/setting.svg' alt='icon' width={35} height={35}></Image>
-        <Image src='/avatar.svg' alt='icon' width={35} height={35}></Image>
+        <Image src='/user.svg' alt='icon' width={35} height={35}></Image>
       </div>
     </header>
   )

@@ -6,20 +6,24 @@
 
 .sidebar ul{
     flex-direction: column;
+    list-style: none;
 }
 
 .sidebar ul li{
     display: flex;
 }
 
+.sidebar img{
+    display:inline-block;
+}
 
-
-.sidebar ul li:hover{
+.sidebar li :hover{
     background-color: #F97316;
     color: #FFF;
     border-radius: 5px;
-    border: 5px #F97316 solid;
 }
+
+
 
 .navbar{
     display: flex;flex-direction: column;
