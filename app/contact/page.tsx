@@ -1,5 +1,12 @@
 "use client"
 import React, { useState, ChangeEvent, FormEvent } from 'react';
+import Image from 'next/image'
+import './contact.module.css'
+import Header from '../components/header'
+import Footer from '../components/footer'
+import Sidebar from '../components/sidebar'
+import styles from '../styles/styles.module.css'
+
 function Contact() {
 type FormData = {
   datepicker: string;
