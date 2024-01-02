@@ -54,8 +54,8 @@ const Contact = () => {
       } else {
         throw new Error('Submission failed');
       }
-    } catch (error) {
-      console.log('Error!', error.message);
+    } catch () {
+      console.log('Error!');
     }
   };
 
