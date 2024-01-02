@@ -1,5 +1,27 @@
-import './signup.module.css'
+"use client"
+
+import './signup.module.css';
+import { useState } from 'react';
+import axios from "axios";
+
+
 function Signup() {
+    const [username, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+
+    const handleClick = async () => {
+      const data = { username, email, password };
+      const logUser = async () => {
+        try {
+          const user = await axios.post(`https://healer.onrender.com/api/register`, data);
+          console.log(user);
+        } catch (err) {
+          console.log(err);
+        }
+      };
+      logUser();
+    };
   
     return (
       <div className='signin-main-container'>
@@ -36,7 +58,7 @@ function Signup() {
                 </div>
               </div>
               <div className='signin-email_address'>
-                <input type='text' name="email" className='signin-email_address_box'  />
+                <input type='text' name="username" className='signin-email_address_box' onChange={(e) => setName(e.target.value)} />
               </div>
 
                 <div className='signin-email'>
@@ -44,7 +66,7 @@ function Signup() {
                 </div>
               </div>
               <div className='signin-email_address'>
-                <input type='email' name="email" className='signin-email_address_box'  />
+                <input type='email' name="email" className='signin-email_address_box'  onChange={(e) => setEmail(e.target.value)}/>
               </div>
   
   
@@ -54,11 +76,11 @@ function Signup() {
                 </div>
               </div>
               <div className='signin-email_address'>
-                <input type='Password' name="password" className='signin-email_address_box' />
+                <input type='Password' name="password" className='signin-email_address_box' onChange={(e) => setPassword(e.target.value)}/>
               </div>
   
               <div className='signin-btn-div-box-2'>
-              <button type='submit' className='signin-btn'>
+              <button type='button' className='signin-btn' onClick={handleClick}>
                 SIGN UP
               </button>
             </div>
