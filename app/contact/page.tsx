@@ -1,6 +1,6 @@
 "use client"
 import React, { useState, ChangeEvent, FormEvent } from 'react';
-
+export default function Contact() {
 type FormData = {
   datepicker: string;
   role: string;
@@ -52,7 +52,6 @@ const Contact = () => {
     }
   };
 
-  // ... rest of your component remains the same
 };
 
   return (
