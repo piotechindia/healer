@@ -1,13 +1,18 @@
 "use client"
 import React, { useState, ChangeEvent, FormEvent } from 'react';
-import Header from '../components/header';
-import Footer from '../components/footer';
-import Sidebar from '../components/sidebar';
-import styles from '../styles/styles.module.css';
-import Cstyle from './contact.module.css'
+
+type FormData = {
+  datepicker: string;
+  role: string;
+  name: string;
+  email: string;
+  subject: string;
+};
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<FormData>({
+    datepicker: '',
+    role: 'Frontend Intern',
     name: '',
     email: '',
     subject: ''
@@ -15,38 +20,40 @@ const Contact = () => {
 
   const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
-    setFormData({
-      ...formData,
+    setFormData(prevData => ({
+      ...prevData,
       [name]: value
-    });
+    }));
   };
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-  e.preventDefault();
-  const form = e.target as HTMLFormElement; // Explicitly cast e.target to HTMLFormElement
-  try {
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbxOUeRz7XTfO79gYr4XI79X4W34zkn78YeUmYQziGlPVS_ROSEi1R_B7QZ4dv7-fSla/exec';
-    const response = await fetch(scriptURL, {
-      method: 'POST',
-      body: new FormData(form) // Use the explicitly cast form variable here
-    });
-    if (response.ok) {
-      alert('Your Attendance Has Been Submitted. Thank You!!');
-      setFormData({
-        datepicker: '',
-        role: 'Frontend Intern',
-        name: '',
-        email: '',
-        subject: ''
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const form = e.target as HTMLFormElement;
+    try {
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbxOUeRz7XTfO79gYr4XI79X4W34zkn78YeUmYQziGlPVS_ROSEi1R_B7QZ4dv7-fSla/exec';
+      const response = await fetch(scriptURL, {
+        method: 'POST',
+        body: new FormData(form)
       });
-    } else {
-      throw new Error('Submission failed');
+      if (response.ok) {
+        alert('Your Attendance Has Been Submitted. Thank You!!');
+        setFormData({
+          datepicker: '',
+          role: 'Frontend Intern',
+          name: '',
+          email: '',
+          subject: ''
+        });
+      } else {
+        throw new Error('Submission failed');
+      }
+    } catch (error) {
+      console.error('Error!', error.message);
     }
-  } catch (error) {
-    console.error('Error!', error.message);
-  }
-};
+  };
 
+  // ... rest of your component remains the same
+};
 
   return (
     <main className={styles.main}>
