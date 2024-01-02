@@ -21,28 +21,32 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    try {
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbxOUeRz7XTfO79gYr4XI79X4W34zkn78YeUmYQziGlPVS_ROSEi1R_B7QZ4dv7-fSla/exec';
-      const response = await fetch(scriptURL, {
-        method: 'POST',
-        body: new FormData(e.target)
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  e.preventDefault();
+  const form = e.target as HTMLFormElement; // Explicitly cast e.target to HTMLFormElement
+  try {
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxOUeRz7XTfO79gYr4XI79X4W34zkn78YeUmYQziGlPVS_ROSEi1R_B7QZ4dv7-fSla/exec';
+    const response = await fetch(scriptURL, {
+      method: 'POST',
+      body: new FormData(form) // Use the explicitly cast form variable here
+    });
+    if (response.ok) {
+      alert('Your Attendance Has Been Submitted. Thank You!!');
+      setFormData({
+        datepicker: '',
+        role: 'Frontend Intern',
+        name: '',
+        email: '',
+        subject: ''
       });
-      if (response.ok) {
-        alert('Your Attendance Has Been Submitted. Thank You!!');
-        setFormData({
-          name: '',
-          email: '',
-          subject: ''
-        });
-      } else {
-        throw new Error('Submission failed');
-      }
-    } catch (error) {
-      console.error('Error!', error.message);
+    } else {
+      throw new Error('Submission failed');
     }
-  };
+  } catch (error) {
+    console.error('Error!', error.message);
+  }
+};
+
 
   return (
     <main className={styles.main}>
