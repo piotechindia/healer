@@ -1,5 +1,5 @@
 "use client"
-import React, { useState } from 'react';
+import React, { useState, ChangeEvent, FormEvent } from 'react';
 import Header from '../components/header';
 import Footer from '../components/footer';
 import Sidebar from '../components/sidebar';
@@ -13,7 +13,7 @@ const Contact = () => {
     subject: ''
   });
 
-  const handleChange = (e) => {
+  const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData({
       ...formData,
@@ -21,7 +21,7 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     try {
       const scriptURL = 'https://script.google.com/macros/s/AKfycbxOUeRz7XTfO79gYr4XI79X4W34zkn78YeUmYQziGlPVS_ROSEi1R_B7QZ4dv7-fSla/exec';
