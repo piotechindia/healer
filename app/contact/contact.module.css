@@ -1,0 +1,34 @@
+.contactform {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    height: 100%;
+}
+
+.heading {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 3rem auto;
+}
+
+.submitBtn {
+    padding: 8px 10px;
+    background-color: #ff6f2c;
+    border-radius: 4px;
+    color: #fff;
+    width: 100%;
+    transition: .3s all ease-in-out;
+}
+.submitBtn:hover{
+    transform: scale(1.2);
+}
+
+.contactform input,
+.contactform textarea {
+    width: 100%;
+}
+
+.contactform input:focus,
+.contactform textarea:focus {
+    outline: none;
+}
