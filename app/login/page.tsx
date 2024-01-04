@@ -8,10 +8,10 @@ function Login() {
   const [password, setPassword] = useState("");
 
   const handleClick = async () => {
-    const data = { email, password };
+    const loginData = { email, password };
     const authUser = async () => {
       try {
-        const user = await axios.post(`https://healer.onrender.com/api/auth/login`, data);
+        const user = await axios.post(`http://localhost:5050/api/auth/login`, loginData);
         console.log(user);
       } catch (err) {
         console.log(err);
@@ -56,7 +56,7 @@ function Login() {
               </div>
             </div>
             <div className='signin-email_address'>
-              <input type='email' name="email" className='signin-email_address_box' onChange={(e) => setEmail(e.target.value)} />
+              <input type='email' className='signin-email_address_box' onChange={(e) => setEmail(e.target.value)} />
             </div>
 
 
@@ -66,7 +66,7 @@ function Login() {
               </div>
             </div>
             <div className='signin-email_address'>
-              <input type='Password' name="password" className='signin-email_address_box' onChange={(e) => setPassword(e.target.value)} />
+              <input type='Password' className='signin-email_address_box' onChange={(e) => setPassword(e.target.value)} />
             </div>
 
             <div className='signin-btn-div-box-2'>
