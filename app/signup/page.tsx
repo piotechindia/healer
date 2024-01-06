@@ -6,18 +6,22 @@ import axios from "axios";
 
 
 function Signup() {
-  const [inputs, setInputs] = useState({});
+  const [username, setUsername] = useState({});
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
-  const handleChange = (e : React.ChangeEvent<HTMLInputElement>) => {
-    setInputs(prev => {
-      return { ...prev, [e.target.name]: e.target.value }
-    })
-  }
+  // const handleChange = (e : React.ChangeEvent<HTMLInputElement>) => {
+  //   setInputs(prev => {
+  //     return { ...prev, [e.target.name]: e.target.value }
+  //   })
+  // }
+  // console.log(inputs)
 
   const handleClick = async () => {
+    const signupData = { username, email, password };
     const logUser = async () => {
       try {
-        const currentUser = await axios.post(`http://localhost:5050/api/auth/register`, inputs);
+        const currentUser = await axios.post(`https://healer.onrender.com/api/auth/register`, signupData);
         console.log(currentUser);
       } catch (err) {
         console.log(err);
@@ -61,7 +65,7 @@ function Signup() {
               </div>
             </div>
             <div className='signin-email_address'>
-              <input type='text' name="name" className='signin-email_address_box' onChange={handleChange} />
+              <input type='text' className='signin-email_address_box' onChange={(e) => setUsername(e.target.value)} />
             </div>
 
             <div className='signin-email'>
@@ -69,7 +73,7 @@ function Signup() {
             </div>
           </div>
           <div className='signin-email_address'>
-            <input type='email' name="email" className='signin-email_address_box' onChange={handleChange} />
+            <input type='email' className='signin-email_address_box' onChange={(e) => setEmail(e.target.value)} />
           </div>
 
 
@@ -79,7 +83,7 @@ function Signup() {
             </div>
           </div>
           <div className='signin-email_address'>
-            <input type='password' name="password" className='signin-email_address_box' onChange={handleChange} />
+            <input type='password' className='signin-email_address_box' onChange={(e) => setPassword(e.target.value)} />
           </div>
 
           <div className='signin-btn-div-box-2'>

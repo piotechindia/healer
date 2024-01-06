@@ -11,7 +11,7 @@ function Login() {
     const loginData = { email, password };
     const authUser = async () => {
       try {
-        const user = await axios.post(`http://localhost:5050/api/auth/login`, loginData);
+        const user = await axios.post(`https://healer.onrender.com/api/auth/login`, loginData);
         console.log(user);
       } catch (err) {
         console.log(err);
