@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;600&family=Poppins&family=Ubuntu:wght@400;700&display=swap');
+
+.maincontainer{
+    width: 1,200px;
+    height: 936px;
+    top: 88px;
+    left: 240px;
+    padding: 100px;
+    gap: 10px;
+}
+
+.container{
+    width: 1,000px;
+    height: 736px;
+    padding: 100px, 50px, 100px, 50px;
+    border-radius: 8px;
+    /* background: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background: #FFFFFF; */
+
+}
+
+.frame109{
+    background: #252639;
+    width:440px;
+    height: 536px;
+    border-radius: 8px;
+    gap: 43px;
+    /* margin-top: 100px;
+    margin-left: 50px; */
+
+}
+.hello{
+    width: 440px;
+    height: 51px;
+    font-family: 'Manrope', sans-serif;
+    font-size: 37px;
+    font-weight: 700;
+    line-height: 51px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FFFFFF;   
+    
+    margin-top: 151px;
+
+}
+
+.enter{
+    width: 307px;
+    height: 50px;
+    font-family: 'Manrope', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+
+    margin-top: 43px;
+    /* text-align: center; */
+    justify-content: center;
+    align-items: center;
+    margin-left: 66.5px;
+}
+
+.signupbutton{
+    width: 147px;
+    height: 47px;
+    top: 338px;
+    left: 146.5px;
+    border-radius: 8px;
+    background: #F97316;
+    
+    margin-left: 146.5px;
+    margin-top: 43px;
+    text-align: center  ;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.signuptext{
+    /* width: 70px;
+    height: 25px; */
+    top: 351px;
+    left: 184px;
+    font-family: 'Manrope', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25.59px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FFFFFF;
+
+    /* text-align: center  ; */
+    justify-content: center;
+    align-items: center;
+
+}
+
+.frame110{
+    /* background: yellow; */
+    width: 460px;
+    height: 532px;
+    padding: 0px, 0px, 0px, 28px;
+    gap: 111px;
+
+    padding-left: 28px;
+    /* margin-top: 100px;
+    margin-right: 50px; */
+
+}
+
+.frame108{
+    width: 458px;
+    height: 55px;
+    padding: 0px, 41px, 0px, 18px;
+    gap: 12px;
+    /* background: green; */
+    margin-top: 45.5px;
+    margin-left: 28px;
+    
+}
+
+.signinbutton{
+    width: 458px;
+    height: 55px;
+    padding: 0px, 41px, 0px, 18px;
+    gap: 12px;
+    
+    /* margin-left: 28px;
+    margin-top: 48.5px; */
+}
+
+.signintext{
+    width: 129px;
+    height: 55px;
+    font-family: 'Manrope', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 55px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #475569;
+
+    
+
+    /* margin-left: 18px; */
+
+}
+
+.frame1110{
+    width: 458px;
+    height: 279px;
+    padding: 0px, 41px, 0px, 18px;
+    gap: 12px;
+    
+    margin-top: 209px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+
+}
+
+.inputemail{
+
+    width: 117px;
+    height: 25px;
+
+    display: flex;
+    flex-direction: column;
+    /* gap: 10px; */
+}
+.inputemail input{
+    width: 399px;
+    height: 46px;
+    padding: 8px, 17px, 8px, 17px;
+    border-radius: 8px;
+    border: 1px;
+    gap: 8px;
+    background: #F1F5F9;
+    background:1px solid #F1F5F9;
+
+}
+
+.inputpassword{
+
+    width: 81px;
+    height: 25px;
+
+    display: flex;
+    flex-direction: column;
+    /* gap: 10px; */
+
+}
+
+.inputpassword input{
+    width: 399px;
+    height: 46px;
+    padding: 8px, 17px, 8px, 17px;
+    border-radius: 8px;
+    border: 1px;
+    gap: 8px;
+    background: #F1F5F9;
+    border: 1px solid #F1F5F9;
+}
+.signinbuttongroup{
+    width: 147px;
+    height: 47px;
+    border-radius: 8px;
+
+}
+.signinbuttongroup p{
+    width: 64px;
+    height: 25px;
+    top: 242.5px;
+    left: 60px;
+    font-family: 'Manrope', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FFFFFF;
+
+    justify-content: center;
+    align-items: center;
+
+}
+.signinbutton2{
+    width: 147px;
+    height: 47px;
+    top: 232px;
+    left: 18px;
+    border-radius: 8px;
+    background: #F97316;
+
+    
+}
