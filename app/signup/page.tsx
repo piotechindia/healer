@@ -1,8 +1,9 @@
 import './signup.module.css'
-function Signup() {
-  
-    return (
-      <div className='signin-main-container'>
+
+export default function SignupPage() {
+  return (
+    <>
+    <div className='signin-main-container'>
         <div className='signin-container'>
           <div className='signin-box-1'>
             <div className='signin-heading-div'>
@@ -65,7 +66,6 @@ function Signup() {
             </div>
           </div>
         </div>
-    )
-  }
-  
-  export default Signup
+    </>
+  )
+}

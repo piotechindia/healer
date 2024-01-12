@@ -1,18 +1,7 @@
-import Image from 'next/image'
-import Header from '../components/header'
-import Footer from '../components/footer'
-import Sidebar from '../components/sidebar'
-import styles from '../styles/styles.module.css'
-
-export default function Profile() {
+export default function ProfilePage() {
   return (
-    <main className={styles.main}>
-      <Header/>
-      <Sidebar/>
-      <div className={styles.pageContent}>
-        <p>My Profile</p>
-        <Footer/>
-        </div>
-    </main>
+    <>
+    <h1>ProfilePage -- Dashboard</h1>
+    </>
   )
 }

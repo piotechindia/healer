@@ -1,18 +1,7 @@
-import Image from 'next/image'
-import Header from '../components/header'
-import Footer from '../components/footer'
-import Sidebar from '../components/sidebar'
-import styles from '../styles/styles.module.css'
-
-export default function Help() {
+export default function HelpPage() {
   return (
-    <main className={styles.main}>
-      <Header/>
-      <Sidebar/>
-      <div className={styles.pageContent}>
-        <p>Help Page</p>
-        <Footer/>
-        </div>
-    </main>
+    <>
+    <h1>HelpPage</h1>
+    </>
   )
 }

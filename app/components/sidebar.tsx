@@ -1,10 +1,31 @@
-import style from '../styles/sidebar.module.css'
-import NavBar from './navBar'
+"use client"
+// import React, { useState } from 'react';
+import Image from 'next/image'
+import Link from 'next/link'
+import '../styles/sidebar.module.css'
+// import NavBar from './navBar'
 
 export default function Sidebar(){
     return (
-        <aside className={style.sidebar}>
-            <NavBar/>
-        </aside>
+        <>
+            <nav>
+                <ul>
+                    {/* <li><Link href='/'><Image src='/images/logos/healer.svg' alt='' width={30} height={30} />Healer</Link></li> */}
+                    <li><Link href='/'>Healer App</Link></li>
+                    {/* <label className="logo"><a href=>Piotech<span>INDIA</span></a></label> */}
+                    <li><Link href='/overview'><Image src='/images/icons/dashboard.svg' alt='' width={25} height={25} /> Overview</Link></li>
+                    <li><Link href='/workout'><Image src='/images/icons/workout.svg' alt='' width={25} height={25} /> Workout</Link></li>
+                    <li><Link href='/diet-plan'><Image src='/images/icons/dietplan.svg' alt='' width={25} height={25} /> Diet Plan</Link></li>
+                    <hr />
+                    <li><Link href='/goals'><Image src='/images/icons/goal.svg' alt='' width={25} height={25} /> Goals</Link></li>
+                    <li><Link href='/progress'><Image src='/images/icons/progress.svg' alt='' width={25} height={25} /> Progress</Link></li>
+                    <li><Link href='/contact'><Image src='/images/icons/contact.svg' alt='' width={25} height={25} /> Contact Us</Link></li>
+                    <li><Link href='/help'><Image src='/images/icons/help.svg' alt='' width={25} height={25} /> Help</Link></li>
+                    <li><Link href='/my-profile'><Image src='/images/icons/user.svg' alt='' width={25} height={25} /> My Account</Link></li>
+                    <hr />
+                    <li><Link href='#'><Image src='/images/icons/logout.svg' alt='' width={25} height={25} /> Logout</Link></li>
+                </ul>
+            </nav>
+        </>
     )
 }

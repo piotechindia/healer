@@ -1,9 +1,14 @@
-import style from '../styles/footer.module.css'
+import '../styles/footer.module.css';
+import Image from 'next/image';
+
 export default function Footer() {
     return (
-      <footer className={style.footer}>
-        <p>footer</p>
-      </footer>
+      <>
+        <p>Footer Area</p>
+        <ul>
+          <li><Image src='/images/icons/blackhole.svg' alt='' width={30} height={30}/></li>
+        </ul>
+      </>
     )
   }
   

@@ -1,22 +1,23 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import style from '../styles/header.module.css'
-import styles from '../styles/styles.module.css'
-import SearchBox from './searchBox'
+import '../styles/header.module.css';
+import Greetings from './greetings'
+// import SearchBox from './searchBox'
 
 export default function Header() {
   return (
-    <header className={style.header}>
-      <div className={styles.flex} style={{ flexDirection: 'column' }}>
-        <p>Good Morning  🙏</p>
-        <h3>Welcome Back!</h3>
+    <>
+      <Greetings />
+
+      {/* <SearchBox/> */}
+      <div className='navTopIcons'>
+        <ul>
+          <li><Link href='#notifications'><Image src='/images/icons/notification.svg' alt='icon' width={29} height={29} title='Notifications'></Image></Link></li>
+          <li><Link href='/my-profile/settings'><Image src='/images/icons/settings.svg' alt='icon' width={30} height={30} title='Settings'></Image></Link></li>
+          <li><Link href='/my-profile'><Image src='/images/icons/avatar.svg' alt='icon' width={29} height={29} title='My Profile'></Image></Link></li>
+        </ul>
       </div>
-      <SearchBox/>
-      <div style={{ display: 'flex', gap: '1rem' }}>
-        <Image src='/notification.svg' alt='icon' width={35} height={35}></Image>
-        <Image src='/setting.svg' alt='icon' width={35} height={35}></Image>
-        <Image src='/avatar.svg' alt='icon' width={35} height={35}></Image>
-      </div>
-    </header>
+    </>
   )
 }
+

@@ -1,7 +1,6 @@
-
-function Login() {
-  
+export default function LoginPage() {
   return (
+    <>
     <div className='signin-main-container'>
       <div className='signin-container'>
         <div className='signin-box-1'>
@@ -57,7 +56,6 @@ function Login() {
         </div>
       </div>
     </div>
+    </>
   )
 }
-
-export default Login
