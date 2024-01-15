@@ -1,18 +1,15 @@
 "use client"
-// import React, { useState } from 'react';
-import Image from 'next/image'
-import Link from 'next/link'
-import '../styles/sidebar.module.css'
-// import NavBar from './navBar'
+import Image from 'next/image';
+import Link from 'next/link';
+import '@/app/styles/styles.module.css';
+import Logo from '@/app/components/logo';
 
-export default function Sidebar(){
+export default function Sidebar() {
     return (
         <>
             <nav>
                 <ul>
-                    {/* <li><Link href='/'><Image src='/images/logos/healer.svg' alt='' width={30} height={30} />Healer</Link></li> */}
-                    <li><Link href='/'>Healer App</Link></li>
-                    {/* <label className="logo"><a href=>Piotech<span>INDIA</span></a></label> */}
+                    <li><Logo /></li>
                     <li><Link href='/overview'><Image src='/images/icons/dashboard.svg' alt='' width={25} height={25} /> Overview</Link></li>
                     <li><Link href='/workout'><Image src='/images/icons/workout.svg' alt='' width={25} height={25} /> Workout</Link></li>
                     <li><Link href='/diet-plan'><Image src='/images/icons/dietplan.svg' alt='' width={25} height={25} /> Diet Plan</Link></li>
