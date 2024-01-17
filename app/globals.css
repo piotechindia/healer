@@ -367,6 +367,19 @@ main {
   display:  none;
 }
 
+.mainMenu li {
+  margin: 1rem 0;
+  text-align: right;
+  margin-right: 4rem;
+  & a{
+    transition: .3s all ease-in-out;
+    &:hover{
+      color: var(--orange);
+      border-bottom: .1rem solid var(--blue);
+    }
+  }
+}
+
 /* header ends here*/
 
 /* footer starts here */
@@ -420,6 +433,7 @@ ul{
   z-index: 999;
 }
 
+
 #check:checked~ul {
   left: 0;
   background: #fff;
@@ -429,148 +443,3 @@ ul{
   display : none;
 }
 }
-
-/* mobile device styling ends here */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-Reset and Global Styles
-html {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-size: 16px;
-  color: #1E293B;
-  scroll-behavior: smooth;
-}
-
-body {
-  display: flex;
-}
-
-Sidebar Styles
-.sidebar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 15%;
-  height: 100vh;
-  background: #fff;
-  border-right: 1px solid #d9d9d9;
-
-  nav ul {
-    padding: 2rem 0;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-
-    li {
-      padding: 1rem 4rem;
-
-      &:first-child {
-        font-size: 1.2rem;
-        color: #fd7127;
-        font-weight: 700;
-
-        &:hover {
-          background: none;
-          color: #1E293B;
-        }
-      }
-
-      &:hover {
-        border-right: .2rem solid #fd7127;
-      }
-
-      a {
-        display: flex;
-        justify-content: center;
-        height: max-content;
-        gap: 1rem;
-      }
-    }
-  }
-}
-
-Main Content Styles
-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 100%;
-  margin-left: 15%;
-  padding: 0;
-
-  header {
-    position: sticky;
-    top: 0;
-    border-bottom: 1px solid #d9d9d9;
-    display: flex;
-    justify-content: space-between;
-    background-color: #fff;
-    z-index: 999;
-    padding: 1rem;
-
-    .navTopIcons ul {
-      display: flex;
-      gap: .7rem;
-    }
-  }
-
-  .pageContent {
-    padding: 2rem;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-
-    h1 {
-      text-align: justify;
-    }
-  }
-
-  footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 1rem;
-    margin-top: 2rem;
-    background-color: #fff;
-
-    ul li {
-      transition: .4s all ease-in-out;
-
-      &:hover {
-        rotate: 360deg;
-      }
-    }
-  }
-} */
-
-
-
-/* @media screen and (min-width: 500px) and (max-width: 858px) {
-  .sidebar {
-    width: 30%;
-  }
-
-  main {
-    margin-left: 30%;
-  }
-} */
