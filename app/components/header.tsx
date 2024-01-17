@@ -64,6 +64,7 @@ export default function Header() {
               opacity="0.5"
               d="M20 12L4 12"
               strokeWidth="1.5"
+              stroke='#d9d9d9'
               strokeLinecap="round"
             />
             <path

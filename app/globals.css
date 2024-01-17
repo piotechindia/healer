@@ -334,6 +334,9 @@ main {
 
 .logoArea1 {
   display: block;
+  & span{
+    display: none;
+  }
 }
 
 .logoArea2 {
@@ -349,6 +352,7 @@ main {
 
   & span{
     color: var(--orange);
+    font-size: .8rem;
     &:hover{
       color: var(--blue);
     }
