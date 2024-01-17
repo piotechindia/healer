@@ -1,6 +1,6 @@
 import React from "react";
 
-const Items = ['Home', 'About'];
+const Items = ['Overview', 'Workout','Diet-Plan','Goals','Progress','Contact','Help','My-Profile','LogOut'];
 
 export default function MenuItems() {
     const listItems = Items.map(item =>{

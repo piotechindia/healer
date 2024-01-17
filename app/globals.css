@@ -304,14 +304,20 @@ body {
 .sidebar {
   display: block;
   width: 20%;
+  overflow: hidden;
   border-right: .1rem solid var(--grey-light);
 
   & ul li a {
     display: flex;
+    width: max-content;
     gap: 1rem;
   }
-  & ul li:hover{
-    border-right: .1rem solid var(--orange);
+  & ul li{
+    border-left: .1rem solid transparent;
+    padding-left: 1rem;
+    &:hover{
+      border-left: .1rem solid var(--orange);
+    }
   }
 }
 
@@ -334,12 +340,18 @@ main {
   display: none;
 }
 
-:is(.logoArea1, .logoArea2) a{
-  font-weight: 600;
-  font-size: 1.3rem;
-  color: var(--orange);
-  &:hover{
+:is(.logoArea1, .logoArea2) {
+  & a{
+    font-weight: 600;
+    font-size: 1.3rem;
     color: var(--black);
+  }
+
+  & span{
+    color: var(--orange);
+    &:hover{
+      color: var(--blue);
+    }
   }
 }
 
@@ -351,7 +363,6 @@ main {
   font-size: 30px;
   float: right;
   line-height: 80px;
-  margin-right: 40px;
   cursor: pointer;
   display: none;
   margin-top: 8px;
@@ -370,12 +381,14 @@ main {
 .mainMenu li {
   margin: 1rem 0;
   text-align: right;
-  margin-right: 4rem;
   & a{
-    transition: .3s all ease-in-out;
+    padding-right: 1rem;
+    transition: .2s all ease-in-out;
+    margin-right: 1rem;
+
     &:hover{
       color: var(--orange);
-      border-bottom: .1rem solid var(--blue);
+      border-right: .1rem solid var(--orange);
     }
   }
 }
