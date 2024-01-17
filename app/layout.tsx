@@ -13,14 +13,14 @@ export const metadata: Metadata = {
 export default function RootLayout({ children, }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body>
-        <aside id='sidebar'><Sidebar /></aside>
-        <main id='main'>
-          <header><Header /></header>
-          <div className="pageContent">
+      <body className='flex'>
+        <Sidebar />
+        <main className='flex-column gap2 flex-space-between'>
+          <Header />
+          <div className='flex-column flex-center p2'>
             {children}
-          <footer><Footer /></footer>
           </div>
+          <Footer />
         </main>
       </body>
     </html>
