@@ -1,141 +1,76 @@
-/* *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Manrope', sans-serif;
-} */
-/* body{
-    background-color: #F1F5F9;
-} */
-.contact{
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-    align-items: center;
-    margin: 0 auto ;
-    width:90%;
+.contact {
+    width: 90%;
     max-width: 50rem;
     border-radius: 8px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    background-color: white;
 }
-.heading{
+
+.heading {
     background: #252639;
     width: 100%;
     text-align: center;
-    font-size: 25px;
     color: #ffffff;
     border-radius: 8px 8px 0 0;
-    padding: 3rem 0 ;
 }
-.info{
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    padding: 3rem 0;
-    gap: 2rem;
-    width: 100%;
+
+.heading h1 {
+    font-size: 2.5rem;
 }
-.getInTouch{
-    display: flex;
-    flex-direction: column;
+
+.getInTouch {
     justify-content: left;
-    align-items:flex-start;
-    gap:25px;
 }
-.contactInfo{
-    display: flex;
-    align-items: center;
-    gap: 10px;
+
+.info,
+.contactInfo,
+.getInTouch {
+    align-items: flex-start;
+}
+
+.contactInfo {
     color: #475569;
     font-weight: 600;
     text-wrap: nowrap;
 }
-.feedback{
-    display: flex;
-    flex-direction: column;
+
+.data p,
+.data span {
+    font-weight: 400;
+    font-size: 0.7rem;
+}
+
+.feedback {
     justify-content: flex-start;
     align-items: left;
-    gap: 5px;
 }
-.feedback label{
+
+.feedback label {
     color: #475569;
-    font-size: 14px;
 }
-.feedback input, .feedback textarea{
+
+.feedback input,
+.feedback textarea {
     border: none;
-    padding: 12px 15px;
     border-radius: 8px;
     background-color: #F1F5F9;
-    margin-bottom: 18px;
-    font-size: 16px;
     color: #252639;
-    width: 100%;
 }
-.feedback input:active , .feedback textarea:active, .feedback input:focus , .feedback textarea:focus {
-    outline: none;
-}
-.submit{
-    width: fit-content;
-    padding: 1rem 3rem;
-    margin: auto;
+
+.submit {
     background-color: #F97316;
     border-radius: 8px;
     color: #ffffff;
     font-weight: 700;
-    font-size: 14px;
     outline: none;
     border: none;
 }
-.submit:hover{
-    box-shadow: 0px 0px 8px 1px var(--orange) ;
-}
 
-
-@media screen and (max-width:700px) {
-    .getInTouch{
-        display: flex;
-        flex-direction: row;
+@media screen and (max-width: 800px) {
+    .heading h1 {
+        font-size: 1.5rem;
     }
-    .info{
+
+    .info {
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .inputLabel{
-        width:100%;
-    }
-}
-
-@media screen and (max-width:600px) {
-    .contact {
-        width: 98%;
-    }
-    .info{
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 1rem 0;
-    }
-    .inputLabel{
-        width:90%;
-    }
-    .heading{
-        font-size: 15px;
-    }
-
-    .getInTouch {
-        gap: 8px;
-    }
-    .contactInfo {
-        font-size: 10px;
-        gap: 5px;
-    }
-    .inputLabel{
-        width:100%;
-    }
-    .feedback{
-        padding:15px;
-        align-items: center;
     }
 }
