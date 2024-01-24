@@ -1,34 +1,76 @@
-.contactform {
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    height: 100%;
+.contact {
+    width: 90%;
+    max-width: 50rem;
+    border-radius: 8px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .heading {
+    background: #252639;
+    width: 100%;
     text-align: center;
-    font-size: 1.5rem;
-    margin: 3rem auto;
+    color: #ffffff;
+    border-radius: 8px 8px 0 0;
 }
 
-.submitBtn {
-    padding: 8px 10px;
-    background-color: #ff6f2c;
-    border-radius: 4px;
-    color: #fff;
-    width: 100%;
-    transition: .3s all ease-in-out;
-}
-.submitBtn:hover{
-    transform: scale(1.2);
+.heading h1 {
+    font-size: 2.5rem;
 }
 
-.contactform input,
-.contactform textarea {
-    width: 100%;
+.getInTouch {
+    justify-content: left;
 }
 
-.contactform input:focus,
-.contactform textarea:focus {
+.info,
+.contactInfo,
+.getInTouch {
+    align-items: flex-start;
+}
+
+.contactInfo {
+    color: #475569;
+    font-weight: 600;
+    text-wrap: nowrap;
+}
+
+.data p,
+.data span {
+    font-weight: 400;
+    font-size: 0.7rem;
+}
+
+.feedback {
+    justify-content: flex-start;
+    align-items: left;
+}
+
+.feedback label {
+    color: #475569;
+}
+
+.feedback input,
+.feedback textarea {
+    border: none;
+    border-radius: 8px;
+    background-color: #F1F5F9;
+    color: #252639;
+}
+
+.submit {
+    background-color: #F97316;
+    border-radius: 8px;
+    color: #ffffff;
+    font-weight: 700;
     outline: none;
+    border: none;
+}
+
+@media screen and (max-width: 800px) {
+    .heading h1 {
+        font-size: 1.5rem;
+    }
+
+    .info {
+        flex-direction: column;
+    }
 }
