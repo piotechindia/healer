@@ -11,6 +11,7 @@ export default function Sidebar() {
                     <li title='Overview'><Link href='/overview'><Image src='/images/icons/dashboard.svg' alt='' width={25} height={25} /> Overview</Link></li>
                     <li title='Workout'><Link href='/workout'><Image src='/images/icons/workout.svg' alt='' width={25} height={25} /> Workout</Link></li>
                     <li title='Diet Plans'><Link href='/diet-plan'><Image src='/images/icons/dietplan.svg' alt='' width={25} height={25} /> Diet Plan</Link></li>
+                    <li title='Recipes'><Link href='/recipes'><Image src='/images/icons/dietplan.svg' alt='' width={25} height={25} /> Recipes</Link></li>
                     <hr />
                     <li title='Goals'><Link href='/goals'><Image src='/images/icons/goal.svg' alt='' width={25} height={25} /> Goals</Link></li>
                     <li title='Progress'><Link href='/progress'><Image src='/images/icons/progress.svg' alt='' width={25} height={25} /> Progress</Link></li>

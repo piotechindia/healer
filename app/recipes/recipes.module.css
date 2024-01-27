@@ -1,0 +1,23 @@
+.recommended h1{
+    font-size: 2rem;
+}
+.recipes{
+    align-items: center;
+}
+.recipe{
+    border-radius: 8px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 0.5rem 0.5rem 0.7rem;
+}
+.recipe img{
+    border-radius: 8px;
+}
+.recipe h5{
+    padding: 0.4rem 0;
+}
+.nutrient{
+    background-color: rgba(255, 166, 0, 0.235);
+    color: #F97316;
+    padding: 0.1rem 0.3rem;
+    border-radius: 4px;
+}
