@@ -1,7 +1,7 @@
 import React from 'react'
-import './signup.modules.css'
+import './Signup.css'
 
-export const signup=()=>{
+export const Signup=()=>{
   return (
 
     <div className="container1">
@@ -55,4 +55,4 @@ export const signup=()=>{
   )
 }
 
-export default signup
+export default Signup

@@ -1,7 +1,7 @@
 import React from 'react'
-import './login.modules.css'
+import './Login.css'
 
-export const login = () => {
+export const Login = () => {
   return (
     
     <div className="maincontainer">
@@ -46,4 +46,4 @@ export const login = () => {
   )
 }
 
-export default login
+export default Login
