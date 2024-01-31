@@ -20,7 +20,7 @@ export default function RootLayout({ children, }: { children: React.ReactNode })
         <main className='flex-column gap2 flex-space-between'>
           <Header />
           <Suspense fallback={<Loading/>}>
-            <div className='flex-column flex-center p2'>
+            <div className='flex-column flex-center p2' style={{overflowY:"scroll"}}>
               {children}
             </div>
           </Suspense>

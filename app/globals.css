@@ -298,6 +298,7 @@ html {
 body {
   height: 100vh;
   list-style: none;
+  overflow: hidden;
 }
 
 /* sidebar starts here */
@@ -448,6 +449,8 @@ ul{
   left: -100%;
   text-align: center;
   z-index: 999;
+  overflow: hidden;
+  overflow-y: scroll;
 }
 
 
