@@ -13,10 +13,8 @@ const GreetingComponent = () => {
         setGreeting('Good Morning');
       } else if (currentHour >= 12 && currentHour < 18) {
         setGreeting('Good Afternoon');
-      } else if(currentHour >= 18 && currentHour < 22){
-        setGreeting('Good Evening');
       } else{
-        setGreeting('Good Night ...')
+        setGreeting('Good Evening ...');
       }
     };
 
