@@ -2,6 +2,7 @@ import type { Awaitable, NextAuthOptions, RequestInternal, User } from "next-aut
 import GitHubProvider from 'next-auth/providers/github'
 import CredentialsProvider from "next-auth/providers/credentials";
 
+
 export const Options: NextAuthOptions = {
     providers : [
         GitHubProvider({
