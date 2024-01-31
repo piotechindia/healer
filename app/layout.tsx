@@ -1,9 +1,11 @@
 import type { Metadata } from 'next'
+import { Suspense } from 'react';
 import './globals.css'
 
 import Header from './components/header';
 import Footer from './components/footer'
 import Sidebar from './components/sidebar';
+import Loading from './loading'
 
 export const metadata: Metadata = {
   title: 'Healer Ai App',
@@ -17,9 +19,11 @@ export default function RootLayout({ children, }: { children: React.ReactNode })
         <Sidebar />
         <main className='flex-column gap2 flex-space-between'>
           <Header />
-          <div className='flex-column flex-center p2'>
-            {children}
-          </div>
+          <Suspense fallback={<Loading/>}>
+            <div className='flex-column flex-center p2'>
+              {children}
+            </div>
+          </Suspense>
           <Footer />
         </main>
       </body>
