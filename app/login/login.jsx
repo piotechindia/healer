@@ -1,10 +1,9 @@
-import React from 'react'
 import './Login.css'
 
-export const Login = () => {
-  return (
-    
-    <div className="maincontainer">
+export const Login =()=>{
+
+    return(
+        <div className="maincontainer">
 
         <div className="container">
 
@@ -43,7 +42,6 @@ export const Login = () => {
 
         </div>
     </div>
-  )
-}
+    )
 
-export default Login
+}

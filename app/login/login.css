@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;600&family=Poppins&family=Ubuntu:wght@400;700&display=swap');
-
 .maincontainer{
     width: 1,200px;
     height: 936px;
@@ -22,6 +20,7 @@
 
 }
 
+
 .frame109{
     background: #252639;
     width:440px;
@@ -32,6 +31,7 @@
     margin-left: 50px; */
 
 }
+
 .hello{
     width: 440px;
     height: 51px;
@@ -81,46 +81,92 @@
 
 }
 
-.signuptext{
-    /* width: 70px;
-    height: 25px; */
-    top: 351px;
-    left: 184px;
-    font-family: 'Manrope', sans-serif;
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 25.59px;
-    letter-spacing: 0em;
-    text-align: center;
-    color: #FFFFFF;
 
-    /* text-align: center  ; */
-    justify-content: center;
-    align-items: center;
-
-}
-
-.frame110{
-    /* background: yellow; */
+.leftcontainer{
+    
     width: 460px;
     height: 532px;
-    padding: 0px, 0px, 0px, 28px;
-    gap: 111px;
-
-    padding-left: 28px;
-    /* margin-top: 100px;
-    margin-right: 50px; */
+    padding-right: 50px;
+    /* padding: 0px, 50px, 0px, 0px; */
+    /* gap: 76px; */
 
 }
 
-.frame108{
+.lefttitle{
     width: 458px;
     height: 55px;
-    padding: 0px, 41px, 0px, 18px;
+    padding-right:41px;
+    padding-left: 18px;
     gap: 12px;
-    /* background: green; */
-    margin-top: 45.5px;
-    margin-left: 28px;
+    /* background-color: blueviolet; */
+    margin-bottom: 76px;
+    color: #475569;
+    font-family: 'Manrope', sans-serif;
+    
+}
+.leftinfo{
+    width: 458px;
+    height: 374px;
+    padding-right:41px;
+    padding-left: 18px;
+    /* gap: 12px; */
+   margin-bottom: 12px;
+}
+
+.lefttitle p{
+    width: 300px;
+    height: 55px;
+    font-family: 'Manrope', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 55px;
+    letter-spacing: 0em;
+    text-align: left;
+    
+}
+
+.leftinfo label{
+    width: 89px;
+    height: 25px;
+    font-family: 'Manrope', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #475569;
+    
+}
+
+.signupemail{
+    width: 399px;
+    height: 46px;
+    padding-top: 8px;
+    padding-right: 17px;
+    border-radius: 8px;
+    padding-bottom: 8px;
+    padding-left: 17px;
+    border: 1px;
+    /* gap: 8px; */
+    margin-bottom: 8px;
+    background: #F1F5F9;
+    border: 1px solid #F1F5F9;
+    
+}
+
+.signuppassword{
+    width: 399px;
+    height: 46px;
+    padding-top: 8px;
+    padding-right: 17px;
+    border-radius: 8px;
+    padding-bottom: 8px;
+    padding-left: 17px;
+    border: 1px;
+    /* gap: 8px; */
+    margin-bottom: 8px;
+    background: #F1F5F9;
+    border: 1px solid #F1F5F9;
     
 }
 
@@ -134,107 +180,18 @@
     margin-top: 48.5px; */
 }
 
-.signintext{
-    width: 129px;
-    height: 55px;
-    font-family: 'Manrope', sans-serif;
-    font-size: 40px;
-    font-weight: 600;
-    line-height: 55px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #475569;
+.signinbutton{
+    /* width: 147px;
+    height: 47px;
+    border-radius: 8px; */
 
-    
-
-    /* margin-left: 18px; */
-
-}
-
-.frame1110{
-    width: 458px;
-    height: 279px;
-    padding: 0px, 41px, 0px, 18px;
-    gap: 12px;
-    
-    margin-top: 209px;
-    display: flex;
-    flex-direction: column;
-    margin-left: 10px;
-
-}
-
-.inputemail{
-
-    width: 117px;
-    height: 25px;
-
-    display: flex;
-    flex-direction: column;
-    /* gap: 10px; */
-}
-.inputemail input{
-    width: 399px;
-    height: 46px;
-    padding: 8px, 17px, 8px, 17px;
-    border-radius: 8px;
-    border: 1px;
-    gap: 8px;
-    background: #F1F5F9;
-    background:1px solid #F1F5F9;
-
-}
-
-.inputpassword{
-
-    width: 81px;
-    height: 25px;
-
-    display: flex;
-    flex-direction: column;
-    /* gap: 10px; */
-
-}
-
-.inputpassword input{
-    width: 399px;
-    height: 46px;
-    padding: 8px, 17px, 8px, 17px;
-    border-radius: 8px;
-    border: 1px;
-    gap: 8px;
-    background: #F1F5F9;
-    border: 1px solid #F1F5F9;
-}
-.signinbuttongroup{
     width: 147px;
     height: 47px;
-    border-radius: 8px;
-
-}
-.signinbuttongroup p{
-    width: 64px;
-    height: 25px;
-    top: 242.5px;
-    left: 60px;
-    font-family: 'Manrope', sans-serif;
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 25px;
-    letter-spacing: 0em;
-    text-align: center;
-    color: #FFFFFF;
-
-    justify-content: center;
-    align-items: center;
-
-}
-.signinbutton2{
-    width: 147px;
-    height: 47px;
-    top: 232px;
-    left: 18px;
+    /* top: 327px; */
+    /* left: 18px; */
+    margin-top: 64px;
     border-radius: 8px;
     background: #F97316;
-
+    color: #FFFFFF;
+    
 }

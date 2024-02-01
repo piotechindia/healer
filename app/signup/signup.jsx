@@ -1,10 +1,9 @@
-import React from 'react'
 import './Signup.css'
 
-export const Signup=()=>{
-  return (
+export const Signup =()=>{
 
-    <div className="container1">
+    return(
+        <div className="container1">
         
         <div className="container2">
 
@@ -52,7 +51,6 @@ export const Signup=()=>{
 
     </div>
 
-  )
-}
+    )
 
-export default Signup
+}
