@@ -1,0 +1,77 @@
+.recommended{
+    width:1,290px;
+    height:316px;
+    gap: 20px;
+    
+} 
+.recommended h1{
+    font-family: Manrope;
+font-size: 25px;
+font-weight: 600;
+line-height: 34px;
+letter-spacing: 0em;
+text-align: left;
+}
+.recommended p{
+font-family: Manrope;
+font-size: 16px;
+font-weight: 400;
+line-height: 22px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+
+.recipes{
+    width:1,290px;
+    height:238px;
+    gap: 30px;
+    align-items: center;
+}
+.recipe{
+    width:300px;
+height:238px;
+padding: 15px;
+border-radius: 20px;
+gap: 10px;
+
+    border-radius: 8px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 0.5rem 0.5rem 0.7rem;
+}
+.recipe img{
+    width: 270px;
+height: 139px;
+    border-radius: 8px;
+}
+.recipe h5{
+    font-family: Manrope;
+font-size: 16px;
+font-weight: 600;
+line-height: 22px;
+letter-spacing: 0em;
+text-align: center;
+
+    padding: 0.4rem 0;
+}
+.nutrient{
+    width:117px;
+height:27px;
+padding: 4px, 10px, 4px, 2px;
+border-radius: 6px;
+border: 0.5px;
+gap: 10px;
+
+    background-color: rgba(255, 166, 0, 0.235);
+    color: #F97316;
+    padding: 0.1rem 0.3rem;
+    border-radius: 4px;
+
+    font-family: Manrope;
+font-size: 14px;
+font-weight: 500;
+line-height: 19px;
+letter-spacing: 0em;
+text-align: left;
+
+}
