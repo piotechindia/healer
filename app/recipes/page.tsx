@@ -113,7 +113,7 @@ export default function Recipes() {
           </div>
         </div>
         <div className={`pb1 mb2 ${style.recommended}`}>
-          <h1>Healer's Choice</h1>
+          <h1>Healer&apos;s Choice</h1>
           <p>Specially for you</p>
           <div className={`gap2 flex-row ${style.recipes}`}>
             <div className={`flex-coloumn gap1 ${style.recipe}`}>
